@@ -60,7 +60,6 @@ class Content extends Component {
           Gotta catch em all!!
         </button>
         <br />
-
         <div
           style={{
             fontSize: "32px",
@@ -110,6 +109,7 @@ class Content extends Component {
             src={
               this.state.pokemon ? this.state.pokemon.sprites.front_default : ""
             }
+            alt=""
           ></img>
           <img
             class=""
@@ -119,6 +119,7 @@ class Content extends Component {
             src={
               this.state.pokemon ? this.state.pokemon.sprites.back_default : ""
             }
+            alt=""
           ></img>
           <img
             class=""
@@ -128,6 +129,7 @@ class Content extends Component {
             src={
               this.state.pokemon ? this.state.pokemon.sprites.front_shiny : ""
             }
+            alt=""
           ></img>
         </div>
       </div>

@@ -60,6 +60,7 @@ class Content extends Component {
           Gotta catch em all!!
         </button>
         <br />
+
         <div
           style={{
             fontSize: "32px",
@@ -70,20 +71,65 @@ class Content extends Component {
             this.state.pokemon ? this.state.pokemon.forms[0].name : ""
           )}
         </div>
-        <div>
+        <div
+          style={{
+            fontSize: "32px",
+            texttransform: "capitalize",
+          }}
+        >
           {this.state.pokemon
             ? `Type: ${this.Capitalize(this.buildPokemonTypes())}`
             : ""}
         </div>
-        <img
-          class="d-flex justify-content"
+        <div
           style={{
-            width: "400px",
+            fontSize: "32px",
+            texttransform: "capitalize",
           }}
-          src={
-            this.state.pokemon ? this.state.pokemon.sprites.front_default : ""
-          }
-        ></img>
+        >
+          {this.state.pokemon
+            ? `Height: ${Math.round(this.state.pokemon.height / 3.281)}m`
+            : ""}
+        </div>
+        <div
+          style={{
+            fontSize: "32px",
+            texttransform: "capitalize",
+          }}
+        >
+          {this.state.pokemon
+            ? `Weight: ${Math.round(this.state.pokemon.weight / 2.205)}kg`
+            : ""}
+        </div>
+        <div class="d-flex flex-row bd-highlight mb-3">
+          <img
+            class=""
+            style={{
+              width: "400px",
+            }}
+            src={
+              this.state.pokemon ? this.state.pokemon.sprites.front_default : ""
+            }
+          ></img>
+          <img
+            class=""
+            style={{
+              width: "400px",
+            }}
+            src={
+              this.state.pokemon ? this.state.pokemon.sprites.back_default : ""
+            }
+          ></img>
+          <img
+            class=""
+            style={{
+              width: "400px",
+            }}
+            src={
+              this.state.pokemon ? this.state.pokemon.sprites.front_shiny : ""
+            }
+          ></img>
+        </div>
       </div>
     );
   }

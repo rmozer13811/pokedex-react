@@ -87,7 +87,9 @@ class Content extends Component {
           }}
         >
           {this.state.pokemon
-            ? `Height: ${Math.round(this.state.pokemon.height / 3.281)}m`
+            ? `Height: ${
+                Math.round((this.state.pokemon.height / 30.48) * 100) / 100
+              }m`
             : ""}
         </div>
         <div
@@ -97,7 +99,9 @@ class Content extends Component {
           }}
         >
           {this.state.pokemon
-            ? `Weight: ${Math.round(this.state.pokemon.weight / 2.205)}kg`
+            ? `Weight: ${
+                Math.round((this.state.pokemon.weight / 2.205) * 10) / 10
+              }kg`
             : ""}
         </div>
         <div class="d-flex flex-row bd-highlight mb-3">

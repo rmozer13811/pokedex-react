@@ -49,7 +49,7 @@ class Content extends Component {
             fontSize: "40px",
           }}
         >
-          Insert Pokémon!
+          Insert Pokémon!!
         </h3>
 
         <input
